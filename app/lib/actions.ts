@@ -25,7 +25,7 @@ export async function createInvoice(formData: FormData) {
       });
       // Test it out:
     //   console.log(rawFormData);
-    const amountInCents = amount * 10000000;
+    const amountInCents = amount * 100;
     const date = new Date().toISOString().split('T')[0];
 
     try {
